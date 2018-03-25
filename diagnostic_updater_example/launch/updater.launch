@@ -1,0 +1,13 @@
+<launch>
+  <arg name="period" value="0.5" />
+
+  <node pkg="diagnostic_updater_example" type="imu_node" name="imu_driver">
+    <param name="diagnostic_period" value="$(arg period)" />
+  </node>
+
+  <node pkg="diagnostic_updater_example" type="gps_node" name="gps_driver">
+    <param name="diagnostic_period" value="$(arg period)" />
+  </node>
+
+  <node pkg="rqt_runtime_monitor" type="rqt_runtime_monitor" name="runtime_monitor" />
+</launch>

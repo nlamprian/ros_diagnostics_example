@@ -1,0 +1,19 @@
+pub_rate: 2.0
+# path: Robot
+analyzers:
+  sensors:
+    type: diagnostic_aggregator/SensorsAnalyzer
+    path: Sensors
+    analyzers:
+      imu:
+        type: diagnostic_aggregator/ImuAnalyzer
+        path: IMU
+        find_and_remove_prefix: imu_driver
+        num_items: 2
+        params:
+          name: 'imu topic status'
+          message: 'Frequency too low'
+      gps:
+        type: diagnostic_aggregator/GenericAnalyzer
+        path: GPS
+        find_and_remove_prefix: gps_driver

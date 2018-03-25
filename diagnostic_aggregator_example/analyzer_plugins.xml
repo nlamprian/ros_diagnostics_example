@@ -1,0 +1,12 @@
+<library path="lib/libdiagnostic_aggregator_example_analyzers">
+  <class name="diagnostic_aggregator/SensorsAnalyzer" type="diagnostic_aggregator::SensorsAnalyzer" base_class_type="diagnostic_aggregator::Analyzer">
+    <description>
+      SensorsAnalyzer is a diagnostic analyzer for the sensors category.
+    </description>
+  </class>
+  <class name="diagnostic_aggregator/ImuAnalyzer" type="diagnostic_aggregator::ImuAnalyzer" base_class_type="diagnostic_aggregator::Analyzer">
+    <description>
+      ImuAnalyzer is a diagnostic analyzer for the imu.
+    </description>
+  </class>
+</library>

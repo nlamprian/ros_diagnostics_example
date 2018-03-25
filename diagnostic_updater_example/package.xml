@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>diagnostic_updater_example</name>
+  <version>0.0.1</version>
+  <description>The diagnostic_updater_example package</description>
+
+  <maintainer email="nlamprian@gmail.com">Nick Lamprianidis</maintainer>
+
+  <license>GPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>diagnostic_updater</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+
+  <export>
+  </export>
+</package>

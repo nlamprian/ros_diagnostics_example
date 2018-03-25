@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="diagnostic_aggregator" type="aggregator_node" name="aggregator" output="screen">
+    <rosparam command="load" file="$(find diagnostic_aggregator_example)/config/analyzers.yaml" />
+  </node>
+
+  <node pkg="rqt_robot_monitor" type="rqt_robot_monitor" name="robot_monitor" />
+</launch>
